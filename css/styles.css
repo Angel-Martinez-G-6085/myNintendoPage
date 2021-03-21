@@ -1,0 +1,73 @@
+/* inicio-variables */
+:root {
+  --opensans: "Open Sans", sans-serif;
+  --primary-color:#e40017c4;
+  --secundary-color:#f4c983;
+  --footer-color:#5b6d5b;
+  --font-color:#fff;
+}
+
+/* inicio-reseteo */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: var(--opensans);
+}
+
+/* fin-reseteo */
+
+body{
+  background: url("../assets/images/patern.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.main-container {
+  max-width: 100%;
+  height: 100vh;
+}
+
+.header {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 40% 1fr;
+  width: 100%;
+  height: 100px;
+  background-color: var( --primary-color);
+}
+
+.header figure{
+  display: flex;
+  justify-content: center;
+}
+
+.header--logo {
+  width: 100px;
+  height: 100px;
+}
+
+.header--menu{
+  display: grid;
+  grid-template: 1fr/repeat(3,1fr);
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+  height: 100%;
+  list-style: none;
+}
+
+.header--menu li{
+  padding: 0 10px;
+}
+
+.header--menu a{
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: var(--font-color);
+}
