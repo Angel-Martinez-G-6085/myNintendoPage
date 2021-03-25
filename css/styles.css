@@ -71,3 +71,16 @@ body{
   text-decoration: none;
   color: var(--font-color);
 }
+
+.slider{
+  width: 95%;
+  height: 200px;
+  display: grid;
+  margin: 10px auto;
+  grid-template: 1fr/1fr;
+}
+
+.slider--image{
+  width: 100%;
+  height: 200px;
+}
