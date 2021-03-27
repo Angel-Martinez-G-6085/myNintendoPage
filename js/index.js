@@ -19,4 +19,18 @@ function rightArrowButton(rArrow) {
     });
 }
 
+function leftArrowButton(lArrow){
+    let img=document.querySelector('.slider--image');
+    lArrow.addEventListener('click',()=>{
+        if(counter==0){
+            counter=advertaisments.length-1;
+            img.src=advertaisments[counter];
+        }else{
+            counter--;
+            img.src=advertaisments[counter];
+        }
+    });
+}
+
 rightArrowButton(rightArrow);
+leftArrowButton(leftArrow);
