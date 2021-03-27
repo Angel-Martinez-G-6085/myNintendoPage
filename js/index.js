@@ -1,6 +1,6 @@
-let advertaisments = ['../assets/images/advertaisments/anuncio-1.jpg',
-    '../assets/images/advertaisments/anuncio-2.jpg',
-    '../assets/images/advertaisments/anuncio-3.jpg'],
+let advertaisments = ['./assets/images/advertaisments/anuncio-1.jpg',
+    './assets/images/advertaisments/anuncio-2.jpg',
+    './assets/images/advertaisments/anuncio-3.jpg'],
     counter = 0,
     rightArrow = document.querySelector('.slider--container-RightArrow'),
     leftArrow = document.querySelector('.slider--container-LeftArrow');
