@@ -8,26 +8,26 @@ let advertaisments = ['../assets/images/advertaisments/anuncio-1.jpg',
 function rightArrowButton(rArrow) {
     let img = document.querySelector('.slider--image');
     rArrow.addEventListener('click', () => {
-        if (counter <= advertaisments.length-1) {
+        if (counter <= advertaisments.length - 1) {
             counter++;
             img.src = advertaisments[counter];
         }
-        if(counter==advertaisments.length){
-            counter=0;
-            img.src=advertaisments[counter];
+        if (counter == advertaisments.length) {
+            counter = 0;
+            img.src = advertaisments[counter];
         }
     });
 }
 
-function leftArrowButton(lArrow){
-    let img=document.querySelector('.slider--image');
-    lArrow.addEventListener('click',()=>{
-        if(counter==0){
-            counter=advertaisments.length-1;
-            img.src=advertaisments[counter];
-        }else{
+function leftArrowButton(lArrow) {
+    let img = document.querySelector('.slider--image');
+    lArrow.addEventListener('click', () => {
+        if (counter == 0) {
+            counter = advertaisments.length - 1;
+            img.src = advertaisments[counter];
+        } else {
             counter--;
-            img.src=advertaisments[counter];
+            img.src = advertaisments[counter];
         }
     });
 }
