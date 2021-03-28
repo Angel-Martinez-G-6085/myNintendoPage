@@ -137,6 +137,7 @@ body{
   margin: 0 auto;
   font-size: 1.3rem;
   color: black;
+  cursor: pointer;
   background-color: var(--secundary-color);
   padding:0 25px;
   border-radius: 10px;
