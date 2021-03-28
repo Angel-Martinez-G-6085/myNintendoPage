@@ -105,3 +105,39 @@ body{
   width: 100%;
   height: 200px;
 }
+
+.gamesContainer{
+  display: grid;
+  grid-template: 2fr/1fr;
+}
+
+.gameBox{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 90%;
+  margin: 20px auto;
+  background-color: whitesmoke;
+  box-shadow: 10px 10px 10px 8px rgba(0,0,0,0.75);
+}
+
+.gameBox__image{
+  width: 100%;
+}
+
+.gameBox__text{
+  padding:10px 5px;
+  text-align: justify;
+  font-size: 1.3rem;
+}
+
+.gameBox__link{
+  text-decoration: none;
+  justify-content: center;
+  margin: 0 auto;
+  font-size: 1.3rem;
+  color: black;
+  background-color: var(--secundary-color);
+  padding:0 25px;
+  border-radius: 10px;
+}
